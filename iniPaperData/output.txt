@@ -1,0 +1,668 @@
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889896e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160932e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.976231e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.772900e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.877046e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.942112e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.959243e-01
+ -> found 'h = 6.813035e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 6.942112e-01
+Running CLASS version v2.9.4
+Computing background
+ -> age = 13.758232 Gyr
+ -> conformal age = 14162.475331 Mpc
+ -> radiation/matter equality at z = 3390.667670
+    corresponding to conformal time = 113.209003 Mpc
+Computing thermodynamics with Y_He=0.2454
+ -> recombination at z = 1088.680898 (max of visibility function)
+    corresponding to conformal time = 280.946491 Mpc
+    with comoving sound horizon = 144.614839 Mpc
+    angular diameter distance = 12.739077 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1084.717574
+    giving an angle 100*theta_* = 1.044332
+ -> baryon drag stops at z = 1060.039203
+    corresponding to conformal time = 286.579648 Mpc
+    with comoving sound horizon rs = 147.159700 Mpc
+ -> reionization  at z = 7.974686
+    corresponding to conformal time = 5045.699592 Mpc
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+ -> sigma8=0.826183 for total matter (computed till k = 33.4073 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 5.47 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/./LCDM00_... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889883e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160921e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.064280e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.962619e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.014098e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.046080e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.030154e-01
+ -> found 'h = 6.931910e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.046080e-01
+Running CLASS version v2.9.4
+Computing background
+ -> age = 13.653689 Gyr
+ -> conformal age = 14113.857685 Mpc
+ -> radiation/matter equality at z = 3345.740213
+    corresponding to conformal time = 113.966342 Mpc
+Computing thermodynamics with Y_He=0.2468
+ -> recombination at z = 1088.765892 (max of visibility function)
+    corresponding to conformal time = 280.005653 Mpc
+    with comoving sound horizon = 144.118142 Mpc
+    angular diameter distance = 12.694334 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1084.812483
+    giving an angle 100*theta_* = 1.044330
+ -> baryon drag stops at z = 1060.118045
+    corresponding to conformal time = 285.630244 Mpc
+    with comoving sound horizon rs = 146.659171 Mpc
+ -> reionization  at z = 7.988022
+    corresponding to conformal time = 5039.974084 Mpc
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+ -> sigma8=0.823045 for total matter (computed till k = 33.147 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 5.42 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/./LCDMNur0.100_... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889859e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160898e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226455e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289767e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258385e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239226e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.232852e-01
+ -> found 'h = 7.170321e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239226e-01
+Running CLASS version v2.9.4
+Computing background
+ -> age = 13.449577 Gyr
+ -> conformal age = 14018.314848 Mpc
+ -> radiation/matter equality at z = 3259.363860
+    corresponding to conformal time = 115.466121 Mpc
+Computing thermodynamics with Y_He=0.2494
+ -> recombination at z = 1088.934355 (max of visibility function)
+    corresponding to conformal time = 278.156008 Mpc
+    with comoving sound horizon = 143.142065 Mpc
+    angular diameter distance = 12.606410 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001067
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274744
+    corresponding to conformal time = 283.763494 Mpc
+    with comoving sound horizon rs = 145.675441 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.789825 Mpc
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+ -> sigma8=0.816587 for total matter (computed till k = 32.2576 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 5.32 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/./LCDMNur0.300_... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889834e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160876e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.372277e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.560916e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.469230e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.414650e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.393592e-01
+ -> found 'h = 7.409622e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.414650e-01
+Running CLASS version v2.9.4
+Computing background
+ -> age = 13.251814 Gyr
+ -> conformal age = 13924.945169 Mpc
+ -> radiation/matter equality at z = 3177.333907
+    corresponding to conformal time = 116.946667 Mpc
+Computing thermodynamics with Y_He=0.2519
+ -> recombination at z = 1089.101344 (max of visibility function)
+    corresponding to conformal time = 276.347471 Mpc
+    with comoving sound horizon = 142.188206 Mpc
+    angular diameter distance = 12.520485 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.187729
+    giving an angle 100*theta_* = 1.044321
+ -> baryon drag stops at z = 1060.430180
+    corresponding to conformal time = 281.937984 Mpc
+    with comoving sound horizon rs = 144.713987 Mpc
+ -> reionization  at z = 8.039963
+    corresponding to conformal time = 5017.683324 Mpc
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+ -> sigma8=0.809928 for total matter (computed till k = 31.4222 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 5.16 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/./LCDMNur0.500_... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.00231988 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.5454
+Starting He III -> He II recombination at z = 40629.84
+Starting He II -> He I recombination at z = 31393.58
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 48407.00 by adding 76815 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 10907.135866 (max of visibility function)
+    corresponding to conformal time = 38.939626 Mpc
+    with comoving sound horizon = 22.049371 Mpc
+    angular diameter distance = 1.281549 Mpc
+    and sound horizon angle 100*theta_s = 0.157729
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.811053 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.97 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.010_v3.00_N0.30... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0232283 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.5246
+Starting He III -> He II recombination at z = 29216.71
+Starting He II -> He I recombination at z = 22230.87
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 32271.00 by adding 44543 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 5104.506828 (max of visibility function)
+    corresponding to conformal time = 78.073758 Mpc
+    with comoving sound horizon = 34.263655 Mpc
+    angular diameter distance = 2.730420 Mpc
+    and sound horizon angle 100*theta_s = 0.245791
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.741004 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.22 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.100_v2.00_N0.30... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889888e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160925e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.064320e-01
+ -> matched budget equations by adjusting Omega_Lambda = 6.962699e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.014158e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.046127e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.030207e-01
+ -> found 'h = 6.931960e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.046127e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.0595028 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0248566 
+ -> Omega0_g_twin = 6.95467e-07 
+ -> Omega0_ur_twin = 4.73837e-07 
+ -> T0_twin = 0.929262 K
+ -> T0_ur_twin = 0.663276 K
+ -> age = 13.653644 Gyr
+ -> conformal age = 14113.836710 Mpc
+ -> radiation/matter equality at z = 3345.720992
+    corresponding to conformal time = 113.966670 Mpc
+Computing thermodynamics with Y_He=0.2468
+Computing TWIN thermodynamics with Y_He_twin=0.6125
+Starting He III -> He II recombination at z = 58695.59
+Starting He II -> He I recombination at z = 43922.17
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 63707.00 by adding 107415 steps.
+ -> recombination at z = 1088.765928 (max of visibility function)
+    corresponding to conformal time = 280.005248 Mpc
+    with comoving sound horizon = 144.117928 Mpc
+    angular diameter distance = 12.694315 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1084.812529
+    giving an angle 100*theta_* = 1.044330
+ -> baryon drag stops at z = 1060.118080
+    corresponding to conformal time = 285.629835 Mpc
+    with comoving sound horizon rs = 146.658956 Mpc
+ -> reionization  at z = 7.988022
+    corresponding to conformal time = 5039.973310 Mpc
+ -> TWIN recombination at z = 10542.316023 (max of visibility function)
+    corresponding to conformal time = 40.663397 Mpc
+    with comoving sound horizon = 16.407253 Mpc
+    angular diameter distance = 1.334796 Mpc
+    and sound horizon angle 100*theta_s = 0.116585
+ -> TWIN free-streaming approximation can be turned on as soon as tau=364.268 Mpc (z = 759.5)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.782663 for total matter (computed till k = 29.1008 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.46 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.100_v3.00_N0.10... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0232283 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.5454
+Starting He III -> He II recombination at z = 43361.29
+Starting He II -> He I recombination at z = 32984.07
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 48407.00 by adding 76815 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 8128.136315 (max of visibility function)
+    corresponding to conformal time = 51.199075 Mpc
+    with comoving sound horizon = 24.267370 Mpc
+    angular diameter distance = 1.718147 Mpc
+    and sound horizon angle 100*theta_s = 0.173747
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.752516 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.29 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.100_v3.00_N0.30... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889859e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160899e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.372443e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.561195e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.469457e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.414846e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.393773e-01
+ -> found 'h = 7.409873e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.414846e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.297514 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0217496 
+ -> Omega0_g_twin = 3.04325e-06 
+ -> Omega0_ur_twin = 2.07343e-06 
+ -> T0_twin = 1.38957 K
+ -> T0_ur_twin = 0.991828 K
+ -> age = 13.251604 Gyr
+ -> conformal age = 13924.845553 Mpc
+ -> radiation/matter equality at z = 3177.247313
+    corresponding to conformal time = 116.948261 Mpc
+Computing thermodynamics with Y_He=0.2519
+Computing TWIN thermodynamics with Y_He_twin=0.5116
+Starting He III -> He II recombination at z = 37664.93
+Starting He II -> He I recombination at z = 28879.18
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 42603.00 by adding 65207 steps.
+ -> recombination at z = 1089.101524 (max of visibility function)
+    corresponding to conformal time = 276.345534 Mpc
+    with comoving sound horizon = 142.187185 Mpc
+    angular diameter distance = 12.520393 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.187956
+    giving an angle 100*theta_* = 1.044321
+ -> baryon drag stops at z = 1060.430348
+    corresponding to conformal time = 281.936029 Mpc
+    with comoving sound horizon rs = 144.712958 Mpc
+ -> reionization  at z = 8.039963
+    corresponding to conformal time = 5017.679547 Mpc
+ -> TWIN recombination at z = 7212.671797 (max of visibility function)
+    corresponding to conformal time = 56.536620 Mpc
+    with comoving sound horizon = 28.254886 Mpc
+    angular diameter distance = 1.922503 Mpc
+    and sound horizon angle 100*theta_s = 0.203737
+ -> TWIN free-streaming approximation can be turned on as soon as tau=360.03 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.740066 for total matter (computed till k = 27.5887 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.20 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.100_v3.00_N0.50... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0232283 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.6295
+Starting He III -> He II recombination at z = 112906.05
+Starting He II -> He I recombination at z = 85425.97
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 129087.00 by adding 238175 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 27370.660697 (max of visibility function)
+    corresponding to conformal time = 16.135085 Mpc
+    with comoving sound horizon = 8.664560 Mpc
+    angular diameter distance = 0.511555 Mpc
+    and sound horizon angle 100*theta_s = 0.061880
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.799824 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 4.42 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.100_v8.00_N0.30... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.0464599 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.5454
+Starting He III -> He II recombination at z = 44258.44
+Starting He II -> He I recombination at z = 33494.55
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 48407.00 by adding 76815 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 7701.141715 (max of visibility function)
+    corresponding to conformal time = 53.806953 Mpc
+    with comoving sound horizon = 22.206772 Mpc
+    angular diameter distance = 1.813060 Mpc
+    and sound horizon angle 100*theta_s = 0.159024
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.700156 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 3.52 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.200_v3.00_N0.30... 
+Reading input parameters
+Computing unknown input parameter 'h' using input parameter '100*theta_s'
+ -> matched budget equations by adjusting Omega_Lambda = 6.889874e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.160912e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.226565e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.289967e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.258541e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+ -> matched budget equations by adjusting Omega_Lambda = 7.248973e-01
+ -> found 'h = 7.170471e-01'
+ -> matched budget equations by adjusting Omega_Lambda = 7.239355e-01
+Running CLASS version v2.9.4
+Computing background
+ -> total N_eff = 0.178508 (sumed over ultra-relativistic species, ncdm, dark radiation and  twin sector.)
+ -> Omega0_b_twin = 0.116155 
+ -> Omega0_g_twin = 1.94991e-06 
+ -> Omega0_ur_twin = 1.32852e-06 
+ -> T0_twin = 1.22298 K
+ -> T0_ur_twin = 0.87292 K
+ -> age = 13.449447 Gyr
+ -> conformal age = 14018.253651 Mpc
+ -> radiation/matter equality at z = 3259.309175
+    corresponding to conformal time = 115.467089 Mpc
+Computing thermodynamics with Y_He=0.2494
+Computing TWIN thermodynamics with Y_He_twin=0.5454
+Starting He III -> He II recombination at z = 45503.22
+Starting He II -> He I recombination at z = 34195.51
+Computing Hydrogen recombination ...done!
+Extended Thermodynamics table to z = 48407.00 by adding 76815 steps.
+ -> recombination at z = 1088.934464 (max of visibility function)
+    corresponding to conformal time = 278.154820 Mpc
+    with comoving sound horizon = 143.141439 Mpc
+    angular diameter distance = 12.606353 Mpc
+    and sound horizon angle 100*theta_s = 1.041779
+    Thomson optical depth crosses one at z_* = 1085.001204
+    giving an angle 100*theta_* = 1.044325
+ -> baryon drag stops at z = 1060.274845
+    corresponding to conformal time = 283.762295 Mpc
+    with comoving sound horizon rs = 145.674809 Mpc
+ -> reionization  at z = 8.013992
+    corresponding to conformal time = 5028.787531 Mpc
+ -> TWIN recombination at z = 7375.645775 (max of visibility function)
+    corresponding to conformal time = 55.982016 Mpc
+    with comoving sound horizon = 17.929028 Mpc
+    angular diameter distance = 1.892767 Mpc
+    and sound horizon angle 100*theta_s = 0.128411
+ -> TWIN free-streaming approximation can be turned on as soon as tau=362.042 Mpc (z = 760)
+TWIN: Setting 'has_idm' flag to TRUE.
+Computing sources
+Computing primordial spectra (analytic spectrum)
+Computing linear Fourier spectra.
+Warning: Halofit and HMcode are proved to work for CDM, and also with a small HDM component. But you have requested interacting dark matter (idm_dr), which makes the use of Halofit or HMCode unreliable.
+ -> sigma8=0.609515 for total matter (computed till k = 28.3215 h/Mpc)
+Computing non-linear matter power spectrum with Halofit (including update Takahashi et al. 2012 and Bird 2014)
+ -> [WARNING:] Non-linear corrections could not be computed at redshift z= 1.58 and higher.
+    This is because k_max is too small for the algorithm (Halofit or HMcode) to be able to compute the scale k_NL at this redshift.
+    If non-linear corrections at such high redshift really matter for you,
+    just try to increase one of the parameters P_k_max_h/Mpc or P_k_max_1/Mpc or halofit_min_k_max (the code will take the max of these parameters) until reaching desired z.
+Computing transfers
+Computing unlensed harmonic spectra
+Computing lensed spectra (fast mode)
+Writing output files in output/TwinOut_r0.500_v3.00_N0.30... 
