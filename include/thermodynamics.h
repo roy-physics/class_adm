@@ -809,8 +809,10 @@ extern "C" {
 //@}
 
 /** START #TWIN SECTOR */
-#define _m_H_twin _m_H_*pba->ratio_vev_twin /** Twin H mass*/
-#define _m_e_twin _m_e_*pba->ratio_vev_twin /** Twin electron mass*/
+//#define _m_H_twin _m_H_*pba->ratio_vev_twin /** Twin H mass*/
+#define _m_H_twin pba->me_twin + pba->mp_twin - 0.5*pba->me_twin*pow(pba->alpha_twin,2)/** Twin H mass*/
+//#define _m_e_twin _m_e_*pba->ratio_vev_twin /** Twin electron mass*/
+#define _m_e_twin pba->me_twin /** Twin electron mass*/
 #define _epsilon0_perm_ 8.8541878128e-12 /** Vacuum Permittivity*/
 #define _sigma_twin  _sigma_/pow(pba->ratio_vev_twin,2) /**< Twin Thomson cross-section in m^2 */
 #define _Z_REC_MIN_twin 1000.

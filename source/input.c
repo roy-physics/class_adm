@@ -3368,7 +3368,7 @@ int input_default_params(
   pba->Delta_N_twin = 0.;
   pba->me_twin = 9.10938215e-31; // kg (the Std. Model value)
   pba->mp_twin = 1.67262192e-27; // kg (the Std. Model value)
-  pba->alpha_twin = 0.;
+  pba->alpha_twin = 0.00729735257; // (Std. Model value)
   pba->ratio_vev_twin = 0.;
 
   /** TWIN background derived default */
