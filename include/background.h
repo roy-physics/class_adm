@@ -141,6 +141,9 @@ struct background
 
   /** START #TWIN SECTOR */
   /* TWIN: Input parameters */
+  double me_twin; // dark electron mass (kg)
+  double mp_twin; // dark proton mass (kg)
+  double alpha_twin; // dark fine structure constant
   double r_all_twin;
   double Delta_N_twin;
   double ratio_vev_twin;

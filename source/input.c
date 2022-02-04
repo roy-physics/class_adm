@@ -921,7 +921,40 @@ int input_read_parameters(
                "The fraction of twin sector must be between 0 and 1, you asked for r_all_twin=%e",param1);
       if (flag1 == _TRUE_)
         pba->r_all_twin = param1;
-      
+
+  /** TWIN - me_twin [kg] */
+  class_call(parser_read_double(pfc,"me_twin",&param1,&flag1,errmsg),
+              errmsg,
+              errmsg);
+	/*class_test((param1 < 0.) || (param1 > 1.),
+              errmsg,
+               "The fraction of twin sector must be between 0 and 1, you asked for r_all_twin=%e",param1);
+  */
+      if (flag1 == _TRUE_)
+        pba->me_twin = param1;
+  
+  /** TWIN - mp_twin [kg] */
+  class_call(parser_read_double(pfc,"mp_twin",&param1,&flag1,errmsg),
+              errmsg,
+              errmsg);
+	/*class_test((param1 < 0.) || (param1 > 1.),
+              errmsg,
+               "The fraction of twin sector must be between 0 and 1, you asked for r_all_twin=%e",param1);
+  */
+      if (flag1 == _TRUE_)
+        pba->mp_twin = param1;
+
+  /** TWIN - alpha_twin */
+  class_call(parser_read_double(pfc,"alpha_twin",&param1,&flag1,errmsg),
+              errmsg,
+              errmsg);
+	/*class_test((param1 < 0.) || (param1 > 1.),
+              errmsg,
+               "The fraction of twin sector must be between 0 and 1, you asked for r_all_twin=%e",param1);
+  */
+      if (flag1 == _TRUE_)
+        pba->alpha_twin = param1;
+
   /* TWIN read N_twin */
   class_call(parser_read_double(pfc,"Delta_N_twin",&param1,&flag1,errmsg),
               errmsg,
@@ -933,7 +966,7 @@ int input_read_parameters(
         pba->Delta_N_twin = param1;
       }
       
-  class_call(parser_read_double(pfc,"ratio_vev_twin",&param1,&flag1,errmsg),
+  /*class_call(parser_read_double(pfc,"ratio_vev_twin",&param1,&flag1,errmsg),
               errmsg,
               errmsg);
 	class_test(pba->r_all_twin > 0. && (( param1 < 1.) || (param1 > 15.)),
@@ -942,7 +975,13 @@ int input_read_parameters(
       if (flag1 == _TRUE_) {
         pba->ratio_vev_twin = param1;
       }
-      
+  */      
+
+    // Defining the ratio_vev_twin parameter using me_twin.
+    if(pba->r_all_twin > 0.) {pba->ratio_vev_twin = pba->me_twin/9.10938215e-31;} // Compute the twin Higgs vev from the me_twin/me
+
+    printf("Reading in twin values: me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->me_twin,pba->mp_twin,pba->alpha_twin);
+
     /* If any one of the twin parameters is zero, the code completely ignores the twin sector */  
     if(((pba->r_all_twin != 0.) || (pba->Delta_N_twin != 0.)||(pba->ratio_vev_twin != 0.)) && (pba->r_all_twin)*(pba->Delta_N_twin)*(pba->ratio_vev_twin)==0.){
           printf("-->[Twin Warning:] All the input parameters for the twin sector should be non-zero in .ini file.\n   Completely ignoring the twin sector!\n");
@@ -3327,6 +3366,9 @@ int input_default_params(
   /** TWIN background default */
   pba->r_all_twin = 0.;
   pba->Delta_N_twin = 0.;
+  pba->me_twin = 9.10938215e-31; // kg (the Std. Model value)
+  pba->mp_twin = 1.67262192e-27; // kg (the Std. Model value)
+  pba->alpha_twin = 0.;
   pba->ratio_vev_twin = 0.;
 
   /** TWIN background derived default */
@@ -3377,7 +3419,8 @@ int input_default_params(
   pth->m_idm = 1.e11;
   /** START #TWIN SECTOR */
   /** TWIN thermodynamics default */
-  pth->YHe_twin = _BBN_;
+  //pth->YHe_twin = _BBN_;
+  pth->YHe_twin = 0.;
   /** END TWIN SECTOR */
 
   /** - perturbation structure */

@@ -31,7 +31,7 @@ AR        = ar rv
 # add a compilation option on the terminal command line:
 # "PYTHON=python3 make all" (THanks to Marius Millea for pyhton3
 # compatibility)
-PYTHON ?= /Users/sr39/opt/anaconda3/bin/python
+PYTHON ?= /Users/sr39/opt/anaconda3/envs/class_adm/bin/python
 
 # your optimization flag
 OPTFLAG = -O4 -ffast-math #-march=native
