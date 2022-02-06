@@ -353,6 +353,8 @@ int thermodynamics_init(
   /** Summary: */
 
   /** - define local variables */
+  printf("thermo_init() twin values: r_twin = %.2e, me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->r_all_twin,pba->me_twin,pba->mp_twin,pba->alpha_twin);
+  printf("thermo_init() twin derived values: m_H_twin = %.2e\n",_m_H_twin);
 
   /* index running over time*/
   int index_tau, index_tau_twin;
@@ -4491,16 +4493,40 @@ int thermodynamics_recombination_twin(
   preco->CB1_He2_twin = _h_P_*_c_*_L_He2_ion_twin/_k_B_;
   preco->CT_twin = (8. / 3.) * (_sigma_twin / (_m_e_twin * _c_)) *
                    (8. * pow(_PI_, 5) * pow(_k_B_, 4) / 15. / pow(_h_P_, 3) / pow(_c_, 3));
-  
+
   /* z_initial (defined here)*/
   /* Guess the maximum redshift that will be required */
   zinitial=floor(preco->CB1_He2_twin/(preco->Tnow_twin*32));//ppr->recfast_z_initial;
+  
+  //////////////////////////
+  // DEBUGGING LINE ////////
+  //////////////////////////
+  int integer;
+  //printf("Input: \n"); 
+  //scanf("%d", &integer);
+  //printf("recomb_twin: zinit = %.2e",zinitial);
+
   if (zinitial<10000) {zinitial=10000;}
   pth->z_reco_twin = zinitial;
   
+  //////////////////////////
+  // DEBUGGING LINE ////////
+  //////////////////////////
+  //printf("Input: \n"); 
+  //scanf("%d", &integer);
+  //printf("recomb_twin: 2nd step zinit = %.2e",zinitial);
+
+
   /** - allocate memory for thermodynamics interpolation tables (size defined here) */
   preco->rt_size_twin = (int)floor(1.05*zinitial);
   class_alloc(preco->recombination_table_twin,preco->re_size_twin*preco->rt_size_twin*sizeof(double),pth->error_message);
+
+  //////////////////////////
+  // DEBUGGING LINE ////////
+  //////////////////////////
+  //printf("Input: \n"); 
+  //scanf("%d", &integer);
+  //printf("recomb_twin: Nz=%.2e\n",preco->rt_size_twin);
 
   /* Nz */
   Nz=preco->rt_size_twin/*pr->recfast_Nz0*/;
@@ -4519,12 +4545,20 @@ int thermodynamics_recombination_twin(
   tpaw.pvecback = pvecback;
   preco->x_e_Lalpha=1; /**Used in the definition of Lambda_alpha_twin in derivs function to avoid fluctuations/flipping sign.
                         Stores the last calculated value of x_e_twin*/
-    
+
   /** - impose initial conditions at early times */
   x_e = 1.+2.*preco->fHe_twin;
   y_twin[0] = 1; /**Assuming that the Helium recombination is now complete */
   y_twin[1] = 1.;
   y_twin[2] = preco->Tnow_twin*(1.+z); /**Assuming that the Tb is same as T of dark photons */
+
+  //////////////////////////
+  // DEBUGGING LINE ////////
+  //////////////////////////
+  //printf("This is where the bug is coming from: \n"); 
+  //scanf("%d", &integer);
+  //printf("recomb_twin: Nnow_twin=%.2e, H0=%.2e, OmegaBtwin=%.2e, m_H_twin=%.10e, N_check=%.2e\n",preco->Nnow_twin,preco->H0,OmegaB_twin,_m_H_twin,3.*preco->H0*preco->H0*OmegaB_twin/(8.*_PI_*_G_*mu_H_twin*_m_H_twin));
+
 
   /** Opening a file to store the output of recombination in a file (for Debugging) */
   /*FILE *fTWINreco = fopen("recombination_twin.dat", "w");
@@ -4541,11 +4575,18 @@ int thermodynamics_recombination_twin(
         
         z = zend;
         
+        //////////////////////////
+        // DEBUGGING LINE ////////
+        //////////////////////////
+        //printf("Input: \n"); 
+        //scanf("%d", &integer);
+        //printf("recomb_twin: z0=%.2e, z1=%.2e\n",zstart,zend);
         
         /**  First Helium recombination (Using Saha Equation) */
         if (x_e>(1.+preco->fHe_twin)*1.0001) {
             if(flag[0]==1 && x_e<(1.+2*preco->fHe_twin)*0.99)
             { if (pth->thermodynamics_verbose > 0) {printf("Starting He III -> He II recombination at z = %0.2f",z);};flag[0]=0;}
+
             x_H0_twin = 1.;
             x_He0_twin = 1.;
             
@@ -4562,7 +4603,8 @@ int thermodynamics_recombination_twin(
         else if (x_e > 1.001) {
               if(flag[1]==1)
               { if (pth->thermodynamics_verbose > 0) {printf("\nStarting He II -> He I recombination at z = %0.2f",z);};flag[1]=0;}
-          
+
+
           rhs = 4.*exp(1.5*log(preco->CR_twin*preco->Tnow_twin/(1.+z)) - preco->CB1_He1_twin/(preco->Tnow_twin*(1.+z)))/preco->Nnow_twin;
           //rhs = 4.*exp(1.5*log(preco->CR_twin*1.4*preco->Tnow_twin/(1.+z)) - preco->CB1_He1_twin/(1.4*preco->Tnow_twin*(1.+z)))/preco->Nnow_twin;
 
@@ -4581,18 +4623,32 @@ int thermodynamics_recombination_twin(
             { if (pth->thermodynamics_verbose > 0) {printf("\nComputing Hydrogen recombination ...");};flag[2]=0;
                 ztmp_max=z;
             }
+
+
             if (x_e > 0.1)
             {
               y_twin[2] = preco->Tnow_twin * (1. + z); /**Assuming that the Tb is same as T of mirror photons till x_e > 0.1*/
+              //////////////////////////
+              // DEBUGGING LINE ////////
+              //////////////////////////
+              //printf("xe>0.1: \n"); 
+              //scanf("%d", &integer);
+              //printf("recomb_twin: y_twin[2]=%.2e\n",y_twin[2]);
             }
             if(x_e > 0.99){
                 rhs = exp(1.5*log(preco->CR_twin*preco->Tnow_twin/(1.+z)) - preco->CB1_twin/(preco->Tnow_twin*(1.+z)))/preco->Nnow_twin;
                 x_e = 0.5*(sqrt(pow(rhs,2)+4.*rhs) - rhs);
                 y_twin[0]=x_e;
                 y_twin[2] = preco->Tnow_twin * (1. + z); /**Assuming that the Tb is same as T of dark photons */
+                //////////////////////////
+                // DEBUGGING LINE ////////
+                //////////////////////////
+                //printf("xe>0.99: \n"); 
+                //scanf("%d", &integer);
+                //printf("recomb_twin: CR_twin=%.2e, T_twin=%.2e, CB1_twin=%.2e,N_twin=%.2e,rhs=%.2e\n",preco->CR_twin,preco->Tnow_twin,preco->CB1_twin,preco->Nnow_twin,rhs);
             }
             else{
-            
+            //printf("Twin_thermo -> Generic_integrator: y_twin=(%.2e,%.2e,%.2e), z_start=%.2e, z_end=%.2e\n",y_twin[0],y_twin[1],y_twin[2],zstart,zend);
             class_call(generic_integrator(thermodynamics_derivs_twin,
                                           zstart,
                                           zend,

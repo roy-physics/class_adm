@@ -978,7 +978,7 @@ int input_read_parameters(
   */      
 
     // Defining the ratio_vev_twin parameter using me_twin.
-    if(pba->r_all_twin > 0.) {pba->ratio_vev_twin = pba->me_twin/9.10938215e-31;} // Compute the twin Higgs vev from the me_twin/me
+    if(pba->r_all_twin != 0.) {pba->ratio_vev_twin = pba->me_twin/(9.10938215e-31);} // Compute the twin Higgs vev from the me_twin/me
 
     printf("Reading in twin values: me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->me_twin,pba->mp_twin,pba->alpha_twin);
 
@@ -3366,8 +3366,10 @@ int input_default_params(
   /** TWIN background default */
   pba->r_all_twin = 0.;
   pba->Delta_N_twin = 0.;
-  pba->me_twin = 9.10938215e-31; // kg (the Std. Model value)
-  pba->mp_twin = 1.67262192e-27; // kg (the Std. Model value)
+  //pba->me_twin = 9.10938215e-31; // kg (the Std. Model value)
+  pba->me_twin = 0.;
+  //pba->mp_twin = 1.67262192e-27; // kg (the Std. Model value)
+  pba->mp_twin = 0.;
   pba->alpha_twin = 0.00729735257; // (Std. Model value)
   pba->ratio_vev_twin = 0.;
 

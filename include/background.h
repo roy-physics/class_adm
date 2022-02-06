@@ -606,7 +606,7 @@ extern "C" {
 /* remark: CAMB uses 3.085678e22: good to know if you want to compare  with high accuracy */
 
 #define _Gyr_over_Mpc_ 3.06601394e2 /**< conversion factor from megaparsecs to gigayears
-				         (c=1 units, Julian years of 365.25 days) */
+				         //(c=1 units, Julian years of 365.25 days) */
 #define _c_ 2.99792458e8            /**< c in m/s */
 #define _G_ 6.67428e-11             /**< Newton constant in m^3/Kg/s^2 */
 #define _eV_ 1.602176487e-19        /**< 1 eV expressed in J */
