@@ -992,9 +992,11 @@ int input_read_parameters(
       
     if(pba->r_all_twin!=0.){
       pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/7.4,1./4.);
-      pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
+      //pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
+      pba->T0_ur_twin = 0;
       pba->Omega0_g_twin = pow(pba->T0_twin/pba->T_cmb,4.)*pba->Omega0_g;
-      pba->Omega0_ur_twin = 7./8.*3*pow(pba->T0_ur_twin/pba->T_cmb,4.)*pba->Omega0_g;
+      //pba->Omega0_ur_twin = 7./8.*3*pow(pba->T0_ur_twin/pba->T_cmb,4.)*pba->Omega0_g;
+      pba->Omega0_ur_twin = 0;
       pba->Omega0_b_twin = pba->r_all_twin*pba->Omega0_cdm-pba->Omega0_g_twin-pba->Omega0_ur_twin;
 
       pba->Omega0_ur += pba->Omega0_ur_twin;
@@ -3376,9 +3378,11 @@ int input_default_params(
   /** TWIN background derived default */
   pba->Omega0_b_twin = pba->r_all_twin*pba->Omega0_cdm;
   pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/7.4,1./4.);
-  pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
+  //pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
+  pba->T0_ur_twin = 0.;
   pba->Omega0_g_twin = pow(pba->T0_twin/pba->T_cmb,4.)*pba->Omega0_g;
-  pba->Omega0_ur_twin = 7./8.*3*pow(pba->T0_ur_twin/pba->T_cmb,4.)*pba->Omega0_g;
+  //pba->Omega0_ur_twin = 7./8.*3*pow(pba->T0_ur_twin/pba->T_cmb,4.)*pba->Omega0_g;
+  pba->Omega0_ur_twin = 0.;
 
   /** END TWIN SECTOR */
   
