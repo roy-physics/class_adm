@@ -353,8 +353,12 @@ int thermodynamics_init(
   /** Summary: */
 
   /** - define local variables */
-  printf("thermo_init() twin values: r_twin = %.2e, me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->r_all_twin,pba->me_twin,pba->mp_twin,pba->alpha_twin);
-  printf("thermo_init() twin derived values: m_H_twin = %.2e\n",_m_H_twin);
+  
+  ////////////////////////
+  // DEBUGGING LINE //////
+  ////////////////////////
+  //printf("thermo_init() twin values: r_twin = %.2e, me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->r_all_twin,pba->me_twin,pba->mp_twin,pba->alpha_twin);
+  //printf("thermo_init() twin derived values: m_H_twin = %.2e\n",_m_H_twin);
 
   /* index running over time*/
   int index_tau, index_tau_twin;
@@ -4494,6 +4498,11 @@ int thermodynamics_recombination_twin(
   preco->CT_twin = (8. / 3.) * (_sigma_twin / (_m_e_twin * _c_)) *
                    (8. * pow(_PI_, 5) * pow(_k_B_, 4) / 15. / pow(_h_P_, 3) / pow(_c_, 3));
 
+  ////////////////////
+  // DEBUGGING LINE //
+  ////////////////////
+  //printf("(alpha_twin/alpha)^2=%.2e, _L_H_ion_twin=%.5e\n",pow(pba->alpha_twin/_alpha_,2),_L_H_ion_twin);
+
   /* z_initial (defined here)*/
   /* Guess the maximum redshift that will be required */
   zinitial=floor(preco->CB1_He2_twin/(preco->Tnow_twin*32));//ppr->recfast_z_initial;
@@ -5038,7 +5047,7 @@ int thermodynamics_derivs_twin(
   pvecback = ptpaw->pvecback;
     
   /** Ground state energy of the twin helium  (in Joules) */
-  double epsilon0_twin = 13.6*_eV_*pba->ratio_vev_twin;
+  double epsilon0_twin = 13.6*_eV_*pba->ratio_vev_twin*pow(pba->alpha_twin/_alpha_,2);
   
   x = y_twin[0]; /**x_e*/
   Trad = preco->Tnow_twin * (1.+z);
@@ -5065,11 +5074,11 @@ int thermodynamics_derivs_twin(
     
     
   /** Local constants related to recombination*/
-  lyman2_twin = 0.448*(64.*_PI_/(sqrt(27.*_PI_)))*(pow(_eV_,4)/(pow(4*_PI_*_epsilon0_perm_,2)*pow(_m_e_twin,2)*pow(_c_,3)))*pow(epsilon0_twin/(_k_B_ *Trad),1./2.)*log(epsilon0_twin/(_k_B_*Trad));
+  lyman2_twin = 0.448*(64.*_PI_/(sqrt(27.*_PI_)))*pow(pba->alpha_twin/_alpha_,2)*(pow(_eV_,4)/(pow(4*_PI_*_epsilon0_perm_,2)*pow(_m_e_twin,2)*pow(_c_,3)))*pow(epsilon0_twin/(_k_B_ *Trad),1./2.)*log(epsilon0_twin/(_k_B_*Trad));
 
   beta_twin = (lyman2_twin/4)*pow(2.*_PI_*(_m_e_twin/_h_P_)*(_k_B_/_h_P_)*Trad,3./2.)*exp(-epsilon0_twin/(4*_k_B_*Trad));
       
-  Lambda_2gamma_twin = 8.227*pba->ratio_vev_twin;
+  Lambda_2gamma_twin = 8.227*pba->ratio_vev_twin*pow(pba->alpha_twin/_alpha_,8);
   Lambda_alpha_twin = 8*_PI_*Hz*pow(3*epsilon0_twin/(4*_h_P_*_c_),3)/(n_H*(1-preco->x_e_Lalpha+0.0001));
   coeffXe_twin = -((Lambda_alpha_twin + Lambda_2gamma_twin)/(Lambda_alpha_twin + Lambda_2gamma_twin + 4*beta_twin))*lyman2_twin;
 
