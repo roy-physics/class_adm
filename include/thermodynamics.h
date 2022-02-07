@@ -747,6 +747,7 @@ extern "C" {
 #define _m_H_ 1.673575e-27    /**< Hydrogen mass in Kg */
 #define _not4_ 3.9715         /**< Helium to Hydrogen mass ratio */
 #define _sigma_ 6.6524616e-29 /**< Thomson cross-section in m^2 */
+#define _alpha_ 1./137.035999206 /** Fine structure constant */
 
 //@}
 
@@ -814,9 +815,9 @@ extern "C" {
 //#define _m_e_twin _m_e_*pba->ratio_vev_twin /** Twin electron mass*/
 #define _m_e_twin (_m_e_/_m_e_)*(pba->me_twin) /** Twin electron mass*/
 #define _epsilon0_perm_ 8.8541878128e-12 /** Vacuum Permittivity*/
-#define _sigma_twin  _sigma_/pow(pba->ratio_vev_twin,2) /**< Twin Thomson cross-section in m^2 */
+#define _sigma_twin  _sigma_*pow(pba->alpha_twin/_alpha_,2)/pow(pba->ratio_vev_twin,2) /**< Twin Thomson cross-section in m^2 */
 #define _Z_REC_MIN_twin 1000.
-#define _L_H_ion_twin 1.096787737e7*pba->ratio_vev_twin
+#define _L_H_ion_twin 1.096787737e7*pba->ratio_vev_twin*pow(pba->alpha_twin/_alpha_,2)
 #define _L_He1_ion_twin 1.98310772e7*pba->ratio_vev_twin
 #define _L_He2_ion_twin 4.389088863e7*pba->ratio_vev_twin
 /** END TWIN SECTOR */
