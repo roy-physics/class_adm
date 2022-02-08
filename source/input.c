@@ -991,7 +991,7 @@ int input_read_parameters(
       };
       
     if(pba->r_all_twin!=0.){
-      pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/7.4,1./4.);
+      pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/4.4,1./4.);
       //pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
       pba->T0_ur_twin = 0;
       pba->Omega0_g_twin = pow(pba->T0_twin/pba->T_cmb,4.)*pba->Omega0_g;
@@ -2937,7 +2937,8 @@ int input_read_parameters(
     /** START #TWIN SECTOR */
       // Setting Output file name.
       if (pba->r_all_twin!=0){
-      sprintf(string1,"output/TwinOut_r%0.3f_v%0.2f_N%0.2f", pba->r_all_twin, pba->ratio_vev_twin, pba->Delta_N_twin);
+      //sprintf(string1,"output/TwinOut_r%0.3f_v%0.2f_N%0.2f", pba->r_all_twin, pba->ratio_vev_twin, pba->Delta_N_twin);
+      sprintf(string1,"output/adm_r%0.3f_me%.1e_mp%.1e_alpha%0.3f", pba->r_all_twin, pba->me_twin, pba->mp_twin, pba->alpha_twin);
       };
     /** END TWIN SECTOR */
     strcpy(pop->root,string1);
@@ -3377,7 +3378,7 @@ int input_default_params(
 
   /** TWIN background derived default */
   pba->Omega0_b_twin = pba->r_all_twin*pba->Omega0_cdm;
-  pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/7.4,1./4.);
+  pba->T0_twin = pba->T_cmb*pow(pba->Delta_N_twin/4.4,1./4.);
   //pba->T0_ur_twin = pow(4./11.,1./3.)*pba->T0_twin;
   pba->T0_ur_twin = 0.;
   pba->Omega0_g_twin = pow(pba->T0_twin/pba->T_cmb,4.)*pba->Omega0_g;

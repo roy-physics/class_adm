@@ -652,7 +652,12 @@ int background_init(
   double Neff, N_dark;
   double w_fld, dw_over_da, integral_fld;
   int filenum=0;
-  printf("background_init() twin values: r_twin = %.2e, me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->r_all_twin,pba->me_twin,pba->mp_twin,pba->alpha_twin);
+  
+  ///////////////////////
+  // DEBUGGING LINE /////
+  ///////////////////////
+  //printf("background_init() twin values: r_twin = %.2e, me = (%.2e) kg, mp = (%.2e) kg, alpha = (%f)\n",pba->r_all_twin,pba->me_twin,pba->mp_twin,pba->alpha_twin);
+  
   /** - in verbose mode, provide some information */
   if (pba->background_verbose > 0) {
     printf("Running CLASS version %s\n",_VERSION_);
