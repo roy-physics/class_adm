@@ -810,7 +810,7 @@ extern "C" {
 //@}
 
 /** START #TWIN SECTOR */
-//#define _m_H_twin _m_H_*pba->ratio_vev_twin /** Twin H mass*/
+//#define _m_H_twin _m_H_*(0.68+0.41*log(1.32+pba->ratio_vev_twin)) /** Twin H mass*/
 #define _m_H_twin (_m_H_/_m_H_)*(pba->mp_twin + pba->me_twin - 0.5*pba->me_twin*pow(pba->alpha_twin,2))
 //#define _m_e_twin _m_e_*pba->ratio_vev_twin /** Twin electron mass*/
 #define _m_e_twin (_m_e_/_m_e_)*(pba->me_twin) /** Twin electron mass*/
